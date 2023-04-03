@@ -16,14 +16,3 @@ metadata:
 parent:
   id: go
   registryUrl: 'https://registry.devfile.io'
-commands:
-  - id: deployk8s
-    apply:
-      component: kubernetes-deploy
-  - id: deploy
-    composite:
-      commands:
-        - deployk8s
-      group:
-        kind: deploy
-        isDefault: true
